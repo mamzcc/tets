@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Imam Permana - 312310061</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #0d0d0d;
+            color: #f2f2f2;
+            overflow-x: hidden;
+        }
+
+        /* HEADER */
+        header {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #1f1f1f, #111);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        /* SECTION */
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* CARD */
+        .card {
+            background: #161616;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.06);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideUp 0.8s forwards;
+        }
+
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.35s; }
+
+        .card:hover {
+            transform: translateY(-5px) scale(1.01);
+            transition: 0.3s;
+            box-shadow: 0 0 35px rgba(255, 255, 255, 0.12);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* BUTTON */
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background: #0099ff;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #0077cc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Imam Permana</h1>
+    <p>NIM: 312310061 • Cyber Security • Web Developer</p>
+</header>
+
+<section>
+
+    <div class="card">
+        <h2>👤 Tentang Saya</h2>
+        <p>
+            Saya <b>Imam Permana</b> (NIM <b>312310061</b>), seorang mahasiswa dan profesional di bidang Cyber Security 
+            dan Web Development. Memiliki ketertarikan pada sistem keamanan digital, server management, 
+            serta implementasi teknologi berbasis IoT dan NFC.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📌 Proyek Unggulan</h2>
+        <ul>
+            <li>Sistem Absensi RFID berbasis Arduino</li>
+            <li>Implementasi Web Server Apache di Debian</li>
+            <li>Sistem Tap NFC untuk Absensi & Riwayat Data</li>
+            <li>Makalah Blockchain: Transparansi & Keamanan Digital</li>
+        </ul>
+        <a class="button" href="#">Portfolio Lengkap</a>
+    </div>
+
+    <div class="card">
+        <h2>📨 Kontak</h2>
+        <p>Email: imam@example.com</p>
+        <p>Instagram: @imampermana</p>
+        <p>GitHub: github.com/imampermana</p>
+        <p><i>Portofolio ini dibuat oleh Imam Permana — NIM 312310061</i></p>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 — Imam Permana (312310061)
+</footer>
+
+</body>
+</html>
